@@ -2,7 +2,6 @@
 *.swp
 *~
 tmp
-/target
 /classes
 /logs
 pom.xml
@@ -17,3 +16,6 @@ pom.xml.asc
 /.lein-env
 .nrepl-port
 yagni.config
+target/*
+# But not these files...
+!target/yagni.jar
