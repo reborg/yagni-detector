@@ -1,0 +1,17 @@
+{
+  :user-config "yagni.config"
+  :matchers {
+    "what if" 10
+    "future developer" 10
+    "if we were to" 9
+    "we would need to" 9
+    "additional benefits" 9
+    "evolve over time" 9
+    "next developer" 9
+    "future" 9
+    "just in case" 8
+    "so when" 8
+    "better solution" 8
+    "generic" 8
+  }
+}

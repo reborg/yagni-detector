@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# For example: YAGNI_HOME=. ./bin/yagni text.txt
+
+java -jar $YAGNI_HOME/target/yagni.jar "$@"
