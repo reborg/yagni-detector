@@ -1,4 +1,4 @@
-(defproject reborg.net/yagni-detector "0.0.2"
+(defproject reborg.net/yagni-detector "0.0.3"
   :description "Because you just ain't gonna need it."
   :dependencies [[org.clojure/clojure "1.8.0-RC2"]
                  [org.clojure/tools.cli "0.3.1"]]

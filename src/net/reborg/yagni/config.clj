@@ -20,7 +20,9 @@
 
 (defn- config []
   (let [main-cfg (load-edn (str "config." (which-env)))
-        user-cfg (edn/read-string (slurp (user-cfg-location main-cfg)))]
+        user-cfg-file (user-cfg-location main-cfg)
+        user-cfg (when (.exists (java.io.File. user-cfg-file))
+                   (edn/read-string (slurp user-cfg-file)))]
     (merge main-cfg user-cfg)))
 
 (defn matchers [] (:matchers (config)))
