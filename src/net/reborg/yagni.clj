@@ -4,7 +4,11 @@
   (:gen-class :main true))
 
 (defn- avg [weights]
-  (float (/ (reduce + weights) (count weights))))
+  (float
+    (/ (reduce + weights)
+       (if (pos? (count weights))
+         (count weights)
+         1))))
 
 (defn- detect [fname]
   (let [ftext (slurp fname)]
